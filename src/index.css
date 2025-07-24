@@ -1,0 +1,25 @@
+@import "tailwindcss";
+/* @import './style/font.css'; */
+/* index.css or main.css */
+html,
+body,
+#root {
+  background-color: #000000; /* match SplashScreen background */
+  margin: 0;
+  padding: 0;
+}
+@keyframes loading-bar {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-loading-bar {
+  animation: loading-bar 2s linear infinite;
+}
+html{
+  scroll-behavior: smooth;
+}

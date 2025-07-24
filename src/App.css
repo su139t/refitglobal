@@ -1,0 +1,22 @@
+/* Ensure 3D canvas takes full screen and is centered */
+#canvas-wrapper {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Info panel transition - opacity smooth effect */
+.info-panel {
+  transition: opacity 0.5s ease;
+}
+
+/* Optional fallback for body background */
+body {
+  margin: 0;
+  overflow-x: hidden;
+  /* font-family: sans-serif; */
+  background-color: #000; /* fallback background */
+}
