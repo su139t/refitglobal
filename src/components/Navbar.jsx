@@ -46,13 +46,13 @@ function Navbar() {
             {/* Desktop Nav Links */}
             <div className="hidden md:flex items-center space-x-10 font-medium text-white text-sm">
               {[
-                "Top Offers",
-                "Refurbished Mobiles",
-                "Why Refurbished",
-                "About Us",
+                { name: "Top Offers", href: "#top-offers" },
+                { name: "Refurbished Mobiles", href: "/mobile" },
+                { name: "Why Refurbished", href: "/whyrefurbished" },
+                { name: "About Us", href: "/about-us" },
               ].map((item, i) => (
-                <a key={i} href="#" className="group relative">
-                  {item}
+                <a key={i} href={item.href} className="group relative">
+                  {item.name}
                   <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-white group-hover:w-full transition-all duration-300 ease-in-out" />
                 </a>
               ))}
@@ -81,26 +81,25 @@ function Navbar() {
       <AnimatePresence>
         {menuOpen && (
           <motion.div
-            className="fixed inset-0 pt-20 z-60 bg-black/70 backdrop-blur-lg flex flex-col items-center justify-start gap-8 text-white text-xl font-semibold"
+            className="fixed inset-0 z-50 bg-black/80 backdrop-blur-xl flex flex-col items-center justify-start gap-8 pt-24 px-6 text-white text-xl font-semibold overflow-y-auto"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
           >
             {[
-              "Top Offers",
-              "Refurbished Mobiles",
-              "Why Refurbished",
-              "About Us",
-              "Sign In",
+              { name: "Top Offers", href: "#top-offers" },
+              { name: "Refurbished Mobiles", href: "/mobile" },
+              { name: "Why Refurbished", href: "/whyrefurbished" },
+              { name: "About Us", href: "/about-us" },
             ].map((item, i) => (
               <a
                 key={i}
-                href="#"
+                href={item.href}
                 onClick={() => setMenuOpen(false)}
-                className="hover:text-pink-400 transition"
+                className="w-full text-center py-3 hover:text-pink-400 transition duration-200"
               >
-                {item}
+                {item.name}
               </a>
             ))}
           </motion.div>

@@ -191,7 +191,7 @@ export default function Footer() {
       >
         <div className="flex flex-col md:flex-row gap-4 items-center">
           <div className="flex items-center gap-2">
-            <img src="/assets/100_original.svg" alt="Original" className="h-5" />
+            <img src="/assets/100_original.svg" alt="Original" className="h-5 text-white" />
             <span>100% ORIGINAL guarantee</span>
           </div>
           <div className="flex items-center gap-2">
