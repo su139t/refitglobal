@@ -302,9 +302,19 @@ Run the test suite using the following command:
 ---
 ## 📌 Project Roadmap
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+-✅ Add hero section with brand identity
+
+-✅ Integrate scroll animations (Framer Motion + IntersectionObserver)
+
+-✅ Add mobile-first responsiveness
+
+-✅ Embed 3D model using react-three-fiber
+
+-⏳ Add dynamic backend support (e.g., CMS or Firebase)
+
+-⏳ Add shopping cart & product filtering (future scope)
+
+
 
 ---
 
@@ -359,6 +369,24 @@ This project is protected under the [SELECT-A-LICENSE](https://choosealicense.co
 
 ## 🙌 Acknowledgments
 
-- List any resources, contributors, inspiration, etc. here.
+-👨‍💻 Developed by Suyash Tiwari
+
+-🎯 Inspired by minimalist tech startup websites (Nothing, Apple, Fairphone)
+
+-🧩 Special thanks to tools like:
+
+-Vite
+
+-React
+
+-TailwindCSS
+
+-Framer Motion
+
+-Three.js
+
+-⭐ If you liked this project, give it a star!
+
+
 
 ---
